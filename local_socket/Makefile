@@ -20,4 +20,4 @@ server.o: local_socket.h
 client.o: local_socket.h
 
 clean:
-	-rm -f *.o  all
+	-rm -f *.o  server client
