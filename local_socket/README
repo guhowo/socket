@@ -1,0 +1,8 @@
+                      A simple local socket programme
+
+HOW IT WORKS?
+
+You need to run the server programme before the client to make it works.
+
+When you run the server program, it creates a socket and waits for connections. If you start it in the
+background so that it runs independently, you can then start clients in the foreground.
