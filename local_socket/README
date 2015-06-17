@@ -6,3 +6,31 @@ You need to run the server programme before the client to make it works.
 
 When you run the server program, it creates a socket and waits for connections. If you start it in the
 background so that it runs independently, you can then start clients in the foreground.
+
+$ ./server &
+[1] 5515
+$ Waiting for client...
+
+Now, when you run the client program, you are successful in connecting to the server. Because the
+server socket exists, you can connect to it and communicate with the server.
+
+$./client
+Waiting for client...
+char from server : B
+
+./client & ./client & ./client
+[2] 5601
+[3] 5602
+Waiting for client...
+char from server : B
+Waiting for client...
+char from server : B
+Waiting for client...
+[2]-  Done                    ./client
+char from server : B
+[3]+  Done                    ./client
+
+Remember that it’s good practice to remove a socket when you’ve finished with it, even if the
+program terminates abnormally via a signal. This keeps the file system from getting cluttered with
+unused files.
+
