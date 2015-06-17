@@ -17,7 +17,7 @@ int main()
 	struct sockaddr_un server_addr, client_addr;
 
 	/* remove any old sockets & create an unnamed socket */
-	unlink("server_socket");
+	unlink(SUN_PATH);
 	server_fd = socket(AF_UNIX, SOCK_STREAM, 0);
 
 	/* name the socket */
