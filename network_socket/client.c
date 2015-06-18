@@ -11,7 +11,7 @@
 /**
  *
  * \brief
- *	Main processing of the server.
+ *	Main processing of the client.
  *	When the normal end of the programme is carried out, it returns by 0.
  *
  * \param	none.
