@@ -16,4 +16,6 @@ B
 [3]+  Done                    ./client
 [2]+  Done                    ./client
 
+IS IT A GOOD SOLUTION?
+
 It maybe not the best solution, because the server program may be quite large and there is still the problem of coordinating database accesses from multiple server copies. In fact, what you really need is a way for a single server to handle multiple clients without blocking and waiting on client requests to arrive. The solution to this problem involves handling multiple open file descriptors at once and isn’t limited to socket applications. Enter select.
