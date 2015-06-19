@@ -14,4 +14,4 @@ select: select.o
 	$(CC) $(CFLAGS) -o select select.o
 
 clean:
-	-rm -f *.o  all
+	-rm -f *.o  select
