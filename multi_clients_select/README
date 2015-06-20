@@ -1,0 +1,26 @@
+Multipule clients?
+
+I do not think so. When you run this version of the server, it deals with multiple clients sequentially in a single process. 
+The following is the result I run the program.
+
+[guh@localhost multi_clients_select]$ ./server &
+[1] 20031
+[guh@localhost multi_clients_select]$ ./client & ./client & ./client & ./client
+[2] 20032
+[3] 20033
+[4] 20034
+client fd = 3
+add a client socket on fd: 4
+client fd = 3
+client fd = 3
+client fd = 3
+add a client socket on fd: 5
+add a client socket on fd: 6
+B
+add a client socket on fd: 7
+B
+[2]   Done                    ./client
+[guh@localhost multi_clients_select]$ B
+B
+
+As what you see above, it take the server more than 20 seconds to deal with four clients. Late I will try to push a multi-process version.
