@@ -1,11 +1,11 @@
 HOW IT WORKS?
 
-Firstly, I need to run the server programme backgroup.
+Firstly, I need to run the server programme background.
 
 [guh@localhost multiple_clients]$ ./server &
 [1] 4393
 
-Then, I run several client programmes. If seeing something like below, you are successful in connecting to the server.
+Then, I run several client programs. If seeing something like below, you are successful in connecting to the server.
 
 [guh@localhost multiple_clients]$ ./client & ./client & ./client
 [2] 4754
