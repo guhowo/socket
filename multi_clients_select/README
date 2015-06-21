@@ -23,4 +23,4 @@ B
 [guh@localhost multi_clients_select]$ B
 B
 
-As what you see above, it take the server more than 20 seconds to deal with four clients. Late I will try to push a multi-threads version.
+As what you see above, it take the server more than 20 seconds to deal with four clients. Later I will try to push a multi-threads version.
